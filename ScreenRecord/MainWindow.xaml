@@ -1,0 +1,16 @@
+﻿<Window x:Class="ScreenRecord.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenRecord"
+		xmlns:fa="http://schemas.fontawesome.com/icons/"
+        mc:Ignorable="d"
+        Title="Screen Record" Height="84" Width="258">
+	<Grid>
+		<StackPanel Orientation="Horizontal">
+			<Button fa:Awesome.Content="Solid_RecordVinyl" Width="30" Height="30" Margin="5,0,0,0" Command="{Binding RecordStartCommand}"/>
+			<Button fa:Awesome.Content="Solid_Stop" Width="30" Height="30" Margin="5,0,0,0" Command="{Binding RecordStopCommand}"/>
+		</StackPanel>
+	</Grid>
+</Window>
